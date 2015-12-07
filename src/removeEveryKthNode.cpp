@@ -33,6 +33,5 @@ struct node * removeEveryKthNode(struct node *head, int K)
 			temp->next = head->next;
 		head = head->next;
 	}
-	head = first;
-	return head;
+	return first;
 }
