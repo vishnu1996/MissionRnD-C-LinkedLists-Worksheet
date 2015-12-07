@@ -26,10 +26,10 @@ void sll_012_sort(struct node *head)
 {
 	struct node *first, *temp;
 	first = head;
-	while (head!= NULL)
+	while (head != NULL)
 	{
 		temp = head->next;
-		while (temp!= NULL)
+		while (temp != NULL)
 		{
 			if (head->data >= temp->data)
 			{
