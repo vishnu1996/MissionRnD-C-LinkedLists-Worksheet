@@ -24,16 +24,16 @@ struct node
 
 void sll_012_sort(struct node *head)
 {
-	int i;
+	int value;
 	struct node *first, *temp;
 	first = head;
-	i = 0;
-	while (i<=1)
+	value = 0;
+	while (value<=1)
 	{
 		temp = head->next;
 		while (temp != NULL)
 		{
-			if (i == temp->data)
+			if (value == temp->data)
 			{
 				head->data = head->data + temp->data;
 				temp->data = head->data - temp->data;
@@ -41,7 +41,7 @@ void sll_012_sort(struct node *head)
 			}
 			temp = temp->next;
 		}
-		i++;
+		value++;
 		head = head->next;
 	}
 	head = first;
